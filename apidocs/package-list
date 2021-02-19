@@ -1,0 +1,4 @@
+com.sistemasoee.app
+com.sistemasoee.app.controllers
+com.sistemasoee.app.entities
+com.sistemasoee.app.repositories
