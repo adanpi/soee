@@ -40,7 +40,9 @@ Se deberá proporcionar un sistema (menú o simples enlaces) para poder navegar 
 ### Entrega
 - Se entregará en un repositorio Github, Gitlab o Bitbucket:
 
+Subido a repositorio:
 
+https://github.com/adanpi/soee
 
 # Desarrollo de la práctica
 Para el Back-End se emplea Spring Boot como motor de un sencillo REST-API, para el Front-end Angular, HTML, css y Bootstrap.
