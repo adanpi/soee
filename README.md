@@ -333,6 +333,59 @@ La estructura del cliente queda del siguiente modo:
 
 En el propio código se comentan algunos aspectos, pero la estructura es el arquetipo definido por angular cli, donde los componentes TS llevan asociado una plantilla HTML y una hoja de estilos CSS.
 
+### app-root y Bootstrap
+
+El punto de entrada de la aplicación se encuentra en  _src/index.html_ . Aquí se establece la interfaz de usuario Bootstrap y se encuentra también el punto de entrada de la aplicación, dentro del selector _<app-root></app-root>_ , será donde Angular colocará el componente principal  _app.component.ts_ .
+
+```
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SOEE - Angularclient</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+```
+
+Se hace uso de Boorstrap por ejemplo en  _user-list.component.html_ .
+
+```
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+           <th scope="col">Age</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.age }}</td>
+          <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+```
+
+
 ### Hojas de estilo CSS
 
 Se ha establecido un stylesheet propio a modo de prueba para los botones de selección de idioma en app.component.css
