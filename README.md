@@ -335,7 +335,7 @@ En el propio código se comentan algunos aspectos, pero la estructura es el arqu
 
 ### app-root y Bootstrap
 
-El punto de entrada de la aplicación se encuentra en  _src/index.html_ . Aquí se establece la interfaz de usuario Bootstrap y se encuentra también el punto de entrada de la aplicación, dentro del selector _<app-root></app-root>_ , será donde Angular colocará el componente principal  _app.component.ts_ .
+El punto de entrada de la aplicación se encuentra en  _src/index.html_ . Aquí se establece la interfaz de usuario Bootstrap y se encuentra también el punto de entrada de la aplicación, dentro del selector  _app-root_ , será donde Angular colocará el componente principal  _app.component.ts_ .
 
 ```
 <!doctype html>
