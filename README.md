@@ -440,7 +440,7 @@ Se crea el fichero src/translate/messages.xlf con los tags a traducir, aquellos 
   </file>
 </xliff>
 ```
-Hay que cerar un fichero por cada idioma, incorporando las traducciones, por ejemplo para castellano:
+Hay que crear un fichero por cada idioma, incorporando las traducciones, por ejemplo para castellano:
 
 **src/translate/messages.es.xlf**
 
@@ -483,7 +483,7 @@ Para lanzar el Front-end angular js bajo node js para desarrollo:
 spring-angular/angularclient$ ng serve --open
 ```
 
-Añadiento **--open** abre navegador apuntando a http://localhost:4200/ para probar el desarrollo (salvo la parte de i18n que hay que probar en producción)
+Añadiendo **--open** abre navegador apuntando a http://localhost:4200/ para probar el desarrollo (salvo la parte de i18n que hay que probar en producción)
 
 Es necesario lanzar un servidor de pruebas para probar en producción con los diferentes locales:
 
